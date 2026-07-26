@@ -1,0 +1,6 @@
+{
+  "name": "Developer Portfolio",
+  "description": "Minimalist black-and-white neo-brutalist developer portfolio with halftone photo effects, monospace typography, and interactive section views.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
