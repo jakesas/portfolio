@@ -30,10 +30,11 @@ export interface Project {
   id: string;
   title: string;
   tagline: string;
-  category: 'systems' | 'web' | 'ai' | 'cli';
+  category: 'systems' | 'web' | 'ai' | 'cli' | 'mobile';
   description: string;
   techStack: string[];
   image: string;
+  imageFit?: 'cover' | 'contain';
   demoUrl?: string;
   demoVideos?: string[];
   githubUrl?: string;

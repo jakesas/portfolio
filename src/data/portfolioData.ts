@@ -4,7 +4,7 @@ import floodImg from '../assets/images/flood_warning_system.png';
 import autonomousPcImg from '../assets/images/autonomous_pc_troubleshooter.png';
 import kapenatinImg from '../assets/images/kapenatin.png';
 import cdpeImg from '../assets/images/cdpe_freelancing.png';
-import mockup1Img from '../assets/images/project_mockup_1_1784689059652.jpg';
+import fixMateImg from '../assets/images/fix_mate.jpg';
 
 export const PORTFOLIO_HEADER = {
   name: "JOSEQUEL PANAGUITON JR.",
@@ -155,20 +155,22 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    id: 'aegis-ai-copilot',
-    title: 'AEGIS INTELLIGENCE PROXY',
-    tagline: 'Enterprise Gemini API gateway with semantic rate-limiting and streaming audit log',
+    id: 'fix-mate',
+    title: 'FIX MATE',
+    tagline: 'AI-powered PC troubleshooting and repair support assistant',
     category: 'ai',
-    description: 'A resilient middleware API proxy that handles intelligent query routing, schema verification, and streaming token transformation for LLM integrations.',
-    techStack: ['TypeScript', 'Express', '@google/genai', 'Redis Cache', 'Server-Sent Events'],
-    image: mockup1Img,
-    demoUrl: 'https://github.com',
+    description: 'An AI-driven support system that diagnoses hardware and software issues, provides step-by-step repair guidance, and automates common troubleshooting workflows for PC maintenance.',
+    techStack: ['React Native', 'TypeScript', 'Node.js', 'Firebase', 'Tailwind CSS'],
+    image: fixMateImg,
+    imageFit: 'contain',
     githubUrl: 'https://github.com',
     featured: false,
-    metrics: ['99.99% Proxy Latency Overhead < 4ms', 'Token Cost Saved: 34%'],
-    architectureOverview: 'Wraps the @google/genai SDK with semantic caching filters to prevent redundant model calls and guarantee response strictness.',
+    demoVideos: ['https://www.youtube.com/embed/Aa-6IRO5gCc', 'https://www.youtube.com/embed/aa-LHudCgBk'],
+    metrics: ['AI Diagnostics', 'Step-by-Step Repair Guides', 'Automated Troubleshooting'],
+    architectureOverview: 'Built with React Native for cross-platform access and Firebase for real-time data sync, integrating AI-powered diagnostic engines to analyze system logs and recommend repair actions.',
     keyChallenges: [
-      'Designed a resilient backpressure mechanism for streaming LLM responses during peak concurrency bursts.'
+      'Developed an AI diagnostic engine that identifies common PC hardware and software issues from user-reported symptoms.',
+      'Designed an intuitive step-by-step repair workflow accessible to non-technical users.'
     ]
   },
   {

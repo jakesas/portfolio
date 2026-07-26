@@ -37,7 +37,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 
       {/* Category Pills */}
       <div className="mb-8 flex flex-wrap gap-2">
-        {(['all', 'systems', 'web', 'cli', 'ai'] as const).map((cat) => (
+        {(['all', 'systems', 'web', 'cli', 'ai', 'mobile'] as const).map((cat) => (
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
@@ -111,7 +111,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover grayscale contrast-125 transition-transform duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                      className={`w-full h-full ${project.imageFit === 'contain' ? 'object-contain' : 'object-cover'} grayscale contrast-125 transition-transform duration-500 group-hover:scale-105 group-hover:grayscale-0`}
                     />
                     <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end text-white">
                       <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-300 space-y-2">

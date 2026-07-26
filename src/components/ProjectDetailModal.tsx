@@ -56,7 +56,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover grayscale contrast-125"
+              className={`w-full h-full ${project.imageFit === 'contain' ? 'object-contain' : 'object-cover'}`}
             />
           </div>
 
