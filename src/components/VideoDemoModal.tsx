@@ -26,29 +26,29 @@ export const VideoDemoModal: React.FC<VideoDemoModalProps> = ({
       >
         {/* Modal Header */}
         <div
-          className={`px-6 py-4 border-b flex items-center justify-between text-xs font-bold uppercase tracking-wider ${
+          className={`px-3 sm:px-6 py-2 sm:py-4 border-b flex items-center justify-between text-[10px] sm:text-xs font-bold uppercase tracking-wider ${
             theme === 'dark'
               ? 'border-neutral-800 bg-neutral-900'
               : 'border-neutral-200 bg-neutral-100'
           }`}
         >
-          <div className="flex items-center space-x-2">
-            <Play className="w-4 h-4 text-emerald-500" />
-            <span>DEMO PLAYER // {project.id}</span>
+          <div className="flex items-center space-x-2 truncate min-w-0">
+            <Play className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-emerald-500" />
+            <span className="truncate">DEMO PLAYER // {project.id}</span>
           </div>
 
           <button
             onClick={onClose}
-            className="p-1 border border-inherit hover:bg-red-500 hover:text-white transition-colors"
+            className="p-1 border border-inherit hover:bg-red-500 hover:text-white transition-colors shrink-0"
             aria-label="Close Demo Modal"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>
 
         {/* Video Content */}
-        <div className="p-6 sm:p-8 overflow-y-auto space-y-6">
-          <h2 className="font-display font-extrabold text-2xl uppercase tracking-tight">
+        <div className="p-3 sm:p-6 lg:p-8 overflow-y-auto space-y-4 sm:space-y-6">
+          <h2 className="font-display font-extrabold text-lg sm:text-2xl uppercase tracking-tight">
             {project.title} — Demo
           </h2>
 

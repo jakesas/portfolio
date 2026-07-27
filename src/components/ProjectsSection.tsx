@@ -85,7 +85,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 <div
                   key={`${project.id}-${index}`}
                   onClick={() => onSelectProject(project)}
-                  className={`group relative w-[380px] shrink-0 border-2 cursor-pointer transition-all duration-300 overflow-hidden flex flex-col ${
+                  className={`group relative w-[280px] sm:w-[340px] md:w-[380px] shrink-0 border-2 cursor-pointer transition-all duration-300 overflow-hidden flex flex-col ${
                     theme === 'dark'
                       ? 'border-white bg-black neo-shadow-dark hover:-translate-y-1'
                       : 'border-black bg-white neo-shadow-light hover:-translate-y-1'

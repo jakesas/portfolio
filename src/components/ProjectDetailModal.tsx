@@ -28,28 +28,28 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
       >
         {/* Modal Top Window Header */}
         <div
-          className={`px-6 py-4 border-b flex items-center justify-between text-xs font-bold uppercase tracking-wider ${
+          className={`px-3 sm:px-6 py-2 sm:py-4 border-b flex items-center justify-between text-[10px] sm:text-xs font-bold uppercase tracking-wider ${
             theme === 'dark'
               ? 'border-neutral-800 bg-neutral-900'
               : 'border-neutral-200 bg-neutral-100'
           }`}
         >
-          <div className="flex items-center space-x-2">
-            <Cpu className="w-4 h-4 text-emerald-500" />
-            <span>SYSTEM_SPEC_INSPECTOR // {project.id}</span>
+          <div className="flex items-center space-x-2 truncate min-w-0">
+            <Cpu className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-emerald-500" />
+            <span className="truncate">SYSTEM_SPEC_INSPECTOR // {project.id}</span>
           </div>
 
           <button
             onClick={onClose}
-            className="p-1 border border-inherit hover:bg-red-500 hover:text-white transition-colors"
+            className="p-1 border border-inherit hover:bg-red-500 hover:text-white transition-colors shrink-0"
             aria-label="Close Project Specs Modal"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>
 
         {/* Modal Scrollable Content */}
-        <div className="p-6 sm:p-8 overflow-y-auto space-y-6">
+        <div className="p-3 sm:p-6 lg:p-8 overflow-y-auto space-y-4 sm:space-y-6">
           
           {/* Mockup Preview Image */}
           <div className="border border-inherit overflow-hidden bg-neutral-900 aspect-[2/1]">

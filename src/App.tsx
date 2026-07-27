@@ -117,7 +117,7 @@ export default function App() {
 
   return (
     <div
-      className={`min-h-screen transition-all duration-300 font-mono ${
+      className={`min-h-screen overflow-x-hidden transition-all duration-300 font-mono ${
         theme === 'dark' ? 'theme-dark bg-grid-pattern-dark' : 'theme-light bg-grid-pattern-light'
       }`}
     >
