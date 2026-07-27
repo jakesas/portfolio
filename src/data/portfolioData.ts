@@ -174,21 +174,21 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    id: 'peso-net-server-troubleshooter',
-    title: 'PESO NET SERVER TROUBLE SHOOTER',
-    tagline: 'Network infrastructure diagnostics and server maintenance assistant',
+    id: 'server-pc-troubleshooter',
+    title: 'SERVER PC TROUBLE SHOOTER',
+    tagline: 'Server and PC infrastructure diagnostics and maintenance assistant',
     category: 'systems',
-    description: 'A network and server diagnostic system that monitors infrastructure health, detects connectivity issues, analyzes server logs, and provides step-by-step troubleshooting for enterprise network environments.',
+    description: 'A diagnostic system that monitors server and PC health, detects hardware and software issues, analyzes system logs, and provides step-by-step troubleshooting for enterprise environments.',
     techStack: ['TypeScript', 'React', 'Next.js', 'Node.js', 'Tailwind CSS', 'PostgreSQL'],
     image: autonomousPcImg,
     demoVideos: ['https://www.youtube.com/embed/0vAX0VB_T8E'],
     githubUrl: 'https://github.com/jakesas',
     featured: true,
     metrics: ['Network Diagnostics', 'Server Log Analysis', 'Guided Repair Flow'],
-    architectureOverview: 'Built with a modular diagnostic pipeline using Next.js for the frontend interface and Node.js for the backend inference engine, integrating network log parsers and infrastructure probe agents.',
+    architectureOverview: 'Built with a modular diagnostic pipeline using Next.js for the frontend interface and Node.js for the backend inference engine, integrating system log parsers and hardware/software probe agents.',
     keyChallenges: [
-      'Designed a diagnostic rule engine that adapts to varying network configurations and server OS environments.',
-      'Built a real-time log streaming parser capable of identifying error patterns across network infrastructure sources.'
+      'Designed a diagnostic rule engine that adapts to varying hardware configurations and server OS environments.',
+      'Built a real-time log streaming parser capable of identifying error patterns across system and server sources.'
     ]
   }
 ];
