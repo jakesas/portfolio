@@ -174,21 +174,21 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    id: 'autonomous-pc-troubleshooter',
-    title: 'AUTONOMOUS PC TROUBLE SHOOTER',
-    tagline: 'AI-driven diagnostics and repair assistant for hardware and software issues',
+    id: 'peso-net-server-troubleshooter',
+    title: 'PESO NET SERVER TROUBLE SHOOTER',
+    tagline: 'Network infrastructure diagnostics and server maintenance assistant',
     category: 'systems',
-    description: 'An intelligent diagnostics system that autonomously scans hardware components, detects driver conflicts, analyzes system logs, and recommends step-by-step repair procedures — reducing mean resolution time for common PC faults.',
+    description: 'A network and server diagnostic system that monitors infrastructure health, detects connectivity issues, analyzes server logs, and provides step-by-step troubleshooting for enterprise network environments.',
     techStack: ['TypeScript', 'React', 'Next.js', 'Node.js', 'Tailwind CSS', 'PostgreSQL'],
     image: autonomousPcImg,
     demoVideos: ['https://www.youtube.com/embed/0vAX0VB_T8E'],
-    githubUrl: 'https://github.com/jakesas/autonomous-pc-troubleshooter',
+    githubUrl: 'https://github.com/jakesas',
     featured: true,
-    metrics: ['Automated Diagnostics', 'Log Analysis Engine', 'Guided Repair Flow'],
-    architectureOverview: 'Built with a modular diagnostic pipeline using Next.js for the frontend interface and Node.js for the backend inference engine, integrating system log parsers and hardware probe agents.',
+    metrics: ['Network Diagnostics', 'Server Log Analysis', 'Guided Repair Flow'],
+    architectureOverview: 'Built with a modular diagnostic pipeline using Next.js for the frontend interface and Node.js for the backend inference engine, integrating network log parsers and infrastructure probe agents.',
     keyChallenges: [
-      'Designed a diagnostic rule engine that adapts to varying hardware configurations and OS versions.',
-      'Built a real-time log streaming parser capable of identifying error patterns across 50+ system sources.'
+      'Designed a diagnostic rule engine that adapts to varying network configurations and server OS environments.',
+      'Built a real-time log streaming parser capable of identifying error patterns across network infrastructure sources.'
     ]
   }
 ];
